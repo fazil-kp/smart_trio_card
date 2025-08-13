@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Stacked Trio Carousel'),
+      home: const MyHomePage(title: 'Smart Trio Card'),
     );
   }
 }
