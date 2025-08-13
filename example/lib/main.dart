@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:smart_trio_card/smart_trio_card.dart';
-import 'package:smart_trio_card/smart_trio_card_controller.dart';
 
 void main() {
   runApp(const MyApp());
