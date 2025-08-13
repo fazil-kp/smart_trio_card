@@ -1,6 +1,6 @@
 name: smart_trio_card
 description: A customizable trio card carousel widget for Flutter with smooth animations, looping transitions, and interactive front card switching.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/fazil-kp/smart_trio_card.git
 repository: https://github.com/fazil-kp/smart_trio_card.git
 
