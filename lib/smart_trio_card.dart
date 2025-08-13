@@ -143,19 +143,16 @@ class _SmartTrioCardState extends State<SmartTrioCard> with TickerProviderStateM
               link: layerLink,
               showWhenUnlinked: false,
               offset: Offset(animation.value!, _verticalStartingPoint),
-              child: Opacity(
-                opacity: opacity.value!,
-                child: Transform.scale(
-                  scale: scale.value,
-                  child: Material(
-                    color: Colors.transparent,
-                    child: GestureDetector(
-                      onPanDown: _onPanDown,
-                      onPanUpdate: _onPanUpdate,
-                      onPanCancel: _onPanCancel,
-                      onPanEnd: _onPanEnd,
-                      child: IgnorePointer(ignoring: child != _children.last && !_controller.isAnimationCompleted, child: child),
-                    ),
+              child: Transform.scale(
+                scale: scale.value,
+                child: Material(
+                  color: Colors.transparent,
+                  child: GestureDetector(
+                    onPanDown: _onPanDown,
+                    onPanUpdate: _onPanUpdate,
+                    onPanCancel: _onPanCancel,
+                    onPanEnd: _onPanEnd,
+                    child: IgnorePointer(ignoring: child != _children.last && !_controller.isAnimationCompleted, child: child),
                   ),
                 ),
               ),

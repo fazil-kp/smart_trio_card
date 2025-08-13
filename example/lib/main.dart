@@ -47,17 +47,20 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         title: Text(widget.title),
       ),
       body: Center(
-        child: SmartTrioCard(
-          background: Container(),
-          params: SmartTrioCardParams(
-            cardHeight: 214,
-            cardWidth: 340,
+        child: Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: SmartTrioCard(
+            background: Container(),
+            params: SmartTrioCardParams(
+              cardHeight: 214,
+              cardWidth: 340,
+            ),
+            children: [
+              _buildCreditCard(colors: [Color(0xFF8B4513), Color(0xFFA0522D), Color(0xFFCD853F), Color(0xFFDEB887)]),
+              _buildCreditCard(colors: [Color(0xFFFFE4E1), Color(0xFFF0E68C), Color(0xFFDAA520), Color(0xFFB8860B)]),
+              _buildCreditCard(colors: [Color(0xFFE6B800), Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)]),
+            ],
           ),
-          children: [
-            _buildCreditCard(colors: [Color(0xFF8B4513), Color(0xFFA0522D), Color(0xFFCD853F), Color(0xFFDEB887)]),
-            _buildCreditCard(colors: [Color(0xFFFFE4E1), Color(0xFFF0E68C), Color(0xFFDAA520), Color(0xFFB8860B)]),
-            _buildCreditCard(colors: [Color(0xFFE6B800), Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)]),
-          ],
         ),
       ),
     );
