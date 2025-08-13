@@ -56,9 +56,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
               cardWidth: 340,
             ),
             children: [
-              _buildCreditCard(colors: [Color(0xFF8B4513), Color(0xFFA0522D), Color(0xFFCD853F), Color(0xFFDEB887)]),
-              _buildCreditCard(colors: [Color(0xFFFFE4E1), Color(0xFFF0E68C), Color(0xFFDAA520), Color(0xFFB8860B)]),
-              _buildCreditCard(colors: [Color(0xFFE6B800), Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)]),
+              _buildCreditCard(colors: [const Color(0xFF8B4513), const Color(0xFFA0522D), const Color(0xFFCD853F), const Color(0xFFDEB887)]),
+              _buildCreditCard(colors: [const Color(0xFFFFE4E1), const Color(0xFFF0E68C), const Color(0xFFDAA520), const Color(0xFFB8860B)]),
+              _buildCreditCard(colors: [const Color(0xFFE6B800), const Color(0xFFFFD700), const Color(0xFFFFA500), const Color(0xFFFF8C00)]),
             ],
           ),
         ),
@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
       height: 214,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16),
-        gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: colors ?? [Color(0xFFE6B800), Color(0xFFFFD700), Color(0xFFFFA500), Color(0xFFFF8C00)], stops: [0.0, 0.3, 0.7, 1.0]),
+        gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: colors ?? [const Color(0xFFE6B800), const Color(0xFFFFD700), const Color(0xFFFFA500), const Color(0xFFFF8C00)], stops: const [0.0, 0.3, 0.7, 1.0]),
         boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.15), blurRadius: 20, offset: const Offset(0, 10))],
       ),
       child: Stack(
@@ -141,10 +141,10 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             ),
           ),
           // Card Number
-          Positioned(
+          const Positioned(
             bottom: 60,
             left: 24,
-            child: const Text(
+            child: Text(
               '**** **** **** 9010',
               style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.w500, letterSpacing: 2, fontFamily: 'monospace'),
             ),

@@ -1,4 +1,4 @@
-library stacked_trio_carousel;
+library;
 
 import 'dart:async';
 
